@@ -11,11 +11,11 @@ function CaesarForm() {
   });
 
   const handleChange = (e) => {
-    if (e.target.name == "raw-text") {
+    if (e.target.name === "raw-text") {
       setInput({ ...input, [e.target.name]: e.target.value });
     }
     if (
-      (e.target.name == "shift-number" && e.target.value >= 1 && e.target.value <= 26) || e.target.value == "" ) {
+      (e.target.name === "shift-number" && e.target.value >= 1 && e.target.value <= 26) || e.target.value === "" ) {
       setInput({ ...input, [e.target.name]: e.target.value });
     }
   };
